@@ -1,0 +1,36 @@
+.react-confirm-alert-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.react-confirm-alert {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  border: 1px solid #e6e4e4;
+  border-radius: 4px;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.react-confirm-alert-button-group {
+  text-align: right;
+}
+
+button {
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 12px;
+  border: 1px solid #eee;
+}
+
+.success-button {
+  color: #fff;
+  background: #208409;
+}

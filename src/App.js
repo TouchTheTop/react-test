@@ -2,6 +2,7 @@ import React, { Component, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import InputNumber from "./InputNumber";
+import { Confirm } from "./Confirm";
 
 // function App() {
 //   const [value, setValue] = useState("aaa");
@@ -18,6 +19,14 @@ class App extends Component {
     super();
 
     this.state = { value: "aaa" };
+  }
+  async componentDidMount() {
+    const res = await Confirm("确认删除？");
+    if (res) {
+      console.log("是");
+    } else {
+      console.log("否");
+    }
   }
   render() {
     return (
